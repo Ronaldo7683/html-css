@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*      SELETORES PERSONALIZADOS
+                #  =  id
+                .  =  class
+                :  =  pseudo-class
+                :: =  pseudo-element
+                >  =  clildren (filho)
+        
+        
+        */
+        li{
+            color: rgb(2, 2, 2);
+        }
+
+        a{
+            color: rgb(28, 136, 100);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:hover{
+            color: darkcyan;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: aquamarine;
+        }
+
+        a::before{
+            content: '→';
+        }
+
+        a::after{
+            content: '←';
+            color: rgba(107, 107, 218, 0.76);
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/ronaldo-ara%C3%BAjo-83a9a9123/" target="_blank">Linkdin</a></li>
+
+            <li><a href="https://web.facebook.com/profile.php?id=100022395067284&viewas=&show_switched_toast=false&show_switched_tooltip=false&is_tour_dismissed=false&is_tour_completed=false&show_podcast_settings=false&show_community_review_changes=false&should_open_composer=false&badge_type=NEW_MEMBER&show_community_rollback_toast=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true" target="_blank">Facebook</a></li>
+
+        <li><a href="https://api.whatsapp.com/send?phone=5519981218581" target="_blank">Whatshapp</a></li>
+    </ul>
+</body>
+</html>
