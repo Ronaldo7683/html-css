@@ -48,6 +48,8 @@ a {
     font-weight: bolder;
 }
 
+
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -57,25 +59,28 @@ section {
     font-size: 2vw;
 }
 
-p.cabeça :hover {
+a :hover {
     text-decoration: underline;
     color: rgb(223, 97, 120);
 }
 
 section > p {
     padding-bottom: 2em;
-}    
+}  
 
 section.normal {
     background-color: white;
     color: black;
     padding-top: 5vh;
     padding-bottom: 0vh;
+    font-size: 1.3em;
 }
 
 section.imagem {
-    background-color: rgb(255, 238, 238);
+    background-color: rgb(247, 222, 222);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba( 0, 0, 0, 0.473);
+    background-attachment: fixed;
 }
 
 section.imagem > h2 {
@@ -90,11 +95,11 @@ section.normal > h2 {
 }
 
 section.imagem > p {
-width: 50%;
+width: 97%;
 display: inline-block;
 padding: 5px;
 color: black;
-background-color: rgba(247, 223, 227, 0.308)
+background-color: rgba(187, 175, 175, 0.308)
 }
 
 section.normal > p {
@@ -105,12 +110,14 @@ section.normal > p {
 section#imagem1 {
     background-image: url('../imagens/imagem1.jpg');
     background-position: left center;
+    background-size: cover;
 
 }
 
 section#imagem2 {
     background-image: url('../imagens/imagem2.jpg');
-    background-position: left 20%
+    background-size: cover;
+    background-position: center;
 }
 
 section#imagem3 {
